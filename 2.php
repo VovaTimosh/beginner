@@ -9,7 +9,7 @@
    <tr>
     <?php
     require_once("functions/color.php");
-    require_once("functions/multiple.php");
+    require_once("functions/number.php");
      $x = [1,6];
      $y = [5,10];
        for($row=0; $row<2; $row++)
@@ -20,11 +20,11 @@
              echo "<th>";
                for($num=1; $num<=10; $num++)
                {             
-                  echo "<span class = ".color($col).">".$col."</span>";
+                  number($col);
                   echo " * ";
-                  echo "<span class = ".color($num).">".$num."</span>";
+                  number($num);
                   echo " = ";
-                  multiple($col,$num);          
+                  number($col*$num);          
                   echo "</p>";
                }
               echo "</th>";

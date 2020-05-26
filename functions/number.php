@@ -1,8 +1,7 @@
 <?php
 
-function multiple($x, $y)
-{     
-    $number = $x*$y;           
+function number($number)
+{               
     while ($number > 0) 
     {
     $array[] = $number % 10;
